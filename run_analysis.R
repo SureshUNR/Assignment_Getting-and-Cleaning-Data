@@ -66,7 +66,7 @@ names(Activity_Identifier_Data) <- "activity"
 names(Subject_Identifier_Data) <- "subject"
 
 
-#Note : At this stage all our variables are properly named.
+#Note : At this stage all our variables in Activity and Subject dataset are properly named.
 
 
 ################   Task 4       ###################################################################
@@ -76,10 +76,11 @@ names(Subject_Identifier_Data) <- "subject"
 
 names(Experimental_Data) <- List_Of_Variables[Required_Variables, 2]
 
+#Note : At this stage all our variables in Experimental dataset are properly named.
 
 #############      Task 1 (Final merger of datasets)  #############################################
 
-# bind all the data in a single data set
+# Binding of  all the 3 data sets in a single data set
 Final_data <- cbind(Experimental_Data, Activity_Identifier_Data, Subject_Identifier_Data)
 
 
